@@ -1,0 +1,91 @@
+块级元素：
+独占一行空间
+	div
+	h1~h6
+	ul li dl
+
+精确计算行高，子元素有边框，在同一行布局的时候当浏览器缩放会发生错乱
+
+表格的设计
+为什么要重置css样式
+哪些属性可以继承  text-align font-size color
+
+表单元素有哪些
+<form action="" enctype="">
+	<input type="text">val输入
+				password  Val输入
+				radio	val
+				checkbox val
+				img		val输入
+				button	val
+				hidden 	val
+				file	val输入
+				submit  val
+				reset	val
+	<select name="">
+		<option value="">请选择</option>没有val的话默认为请选择
+		<option value=""></option>
+	</select>
+	<textarea name="" id="" col="30" row="10">
+	</textarea>
+	get 
+		1.url?key1=val&1key2=val2
+		2.携带数据的量 小
+	post
+		1.url 比较安全
+		2.携带数据的量大
+
+5盒子居中 3种
+<div class="content">
+	<div class="inner"></div>
+</div>
+原则：
+	div指定绝对宽度
+	不能浮动
+	margin：0 auto；
+	.inner{
+		width:200px;
+		height:100px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	2)计算
+	3）绝对定位
+		.content{
+		position:relative
+		}
+		.inne{
+		postion:absolute;
+	   	left:50%;
+		margin-left:-100px;
+		}
+		相对定位
+		.inner{
+			position:relative;
+			left:50%;
+			margin-left:-c100px;
+		}
+	网页中引入css样式：3种
+	<div style=""></div>
+
+	link用于html文件中
+	@important用于css中
+
+	css选择器 优先级
+	层级选择器
+		后代选择器
+		子代选择器
+	复合选择器
+	ID选择器
+	class选择器
+	标签选择器
+
+布局的方式
+	定位元素
+	position
+		static(默认值)
+		relative  相对于原来所在的位置
+		absolute  相对于离他最近的定位父级
+		fixed	  相对浏览器
+
+图片精灵技术

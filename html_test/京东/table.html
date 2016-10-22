@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>table</title>
+	<script type="text/javascript">
+		 function test(){
+    console.log(a);
+    console.log(foo());
+    var a =1;
+    function foo(){
+    	return 2;
+    }
+  }
+  test();
+	</script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		table{
+	
+			 border:1px solid #ccc;  
+			border-collapse: collapse;
+		}
+		th,td{
+			border:1px solid #ccc;
+		}
+		div{
+		background:red !important;
+		background:blue;
+		width: 200px;
+		height: 200px;
+	}
+	</style>
+</head>
+<body>
+	<div style="background:gray"></div>
+	<table>
+		<thead>
+			<tr>
+				<th>学号</th>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>班级</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1001</td>
+				<td>张三</td>
+				<td>15</td>
+				<td>四年一班</td>
+			</tr>
+			<tr>
+				<td>1002</td>
+				<td>张三</td>
+				<td>15</td>
+				<td>四年一班</td>
+			</tr>
+			<tr>
+				<td>1003</td>
+				<td>张三</td>
+				<td>15</td>
+				<td>四年一班</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
